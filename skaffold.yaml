@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2beta5
+kind: Config
+metadata:
+  name: skaffold-env
+build:
+  artifacts:
+  - image: sri05/skaffold-demo
+deploy:
+  kubectl:
+    manifests:
+    - pod.yaml
